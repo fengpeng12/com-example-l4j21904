@@ -2,6 +2,9 @@
 # 说明：工程没有 gradlew，直接使用 setup-gradle 提供的 gradle 命令
 name: Android Build
 
+# 权限给满：避免 workflow 默认只读导致上传产物 / 回写仓库被拒
+permissions: write-all
+
 on:
   workflow_dispatch:
   push:
