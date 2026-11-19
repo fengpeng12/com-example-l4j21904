@@ -1,13 +1,16 @@
-# 掌造首次 push 自动生成：忽略设备实验残留与大文件（可按需修改）
-_*/
+# 构建产物
+build/
+out/
 *.apk
 *.aab
-*.log
-.webnex/
-.webnex-snapshots/
-__pycache__/
+
+# 工具状态
+.repo.git
 repo.git
+.variant
+.webnex-snapshots/
+.agent-regression.md
+
+# 系统文件
 .DS_Store
-build/
-local.properties
-.gradle/
+Thumbs.db
