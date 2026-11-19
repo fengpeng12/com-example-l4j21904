@@ -50,3 +50,4 @@ jobs:
           name: test-report
           path: app/build/reports/tests/
           if-no-files-found: ignore
+# 同步标记：仓库已切换到 com-example-l4j21904
