@@ -30,6 +30,13 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
+
+    // 源码放在 kotlin 目录，需显式声明（云端 Gradle 构建依赖此配置）
+    sourceSets {
+        main {
+            java.srcDirs += 'src/main/kotlin'
+        }
+    }
     packaging {
         resources {
             excludes += ['META-INF/AL2.0', 'META-INF/LGPL2.1', 'META-INF/LICENSE*']
